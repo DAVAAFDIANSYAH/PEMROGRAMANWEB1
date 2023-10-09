@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title style="text-align: center;">DESTINASI WISATA</title>
+
+    <style>
+        input[type="text"],select,textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid ;
+            border-radius: 5px;
+
+        }
+    </style>
 </head>
     <body style="font-size:arrial ; font-family: sans-serif ; background-color: #F4E869;">
         <h1 style="color:#141E46 ;text-align: center;background-color:#FFD36E;"> 
@@ -46,5 +57,76 @@
                 Kota ini memiliki sejarah panjang dan
                 merupakan salah satu kota terbesar dan terpenting di Jawa Timur
         <li> <a href="https://travel.kompas.com/read/2022/05/22/073400027/32-tempat-wisata-malang-raya-banyak-tempat-bernuansa-alam?page=all">MALANG JAWA TIMUR</a></li></div>
-</body>
-</html>
+        <br>
+       <style>
+        table, th, td {
+        border:1px solid rgb(72, 160, 45);
+        text-align: center;
+       font-family:sans-serif;
+
+        }
+       </style>
+        <table style="width: 100%;">
+            <tr>
+                <th colspan="3">JENIS DESTINASI WISATA LAINYA</th>
+                
+            <tr>
+            </tr>
+              <th>NAMA WISATA</th>
+              <th>KOTA</th>
+              <th>JENIS WISATA</th>
+            </tr>
+            <tr>
+              <td>PANTAI PANDAWA </td>
+              <td>BALI</td>
+              <td>PANTAI</td>
+            </tr>
+            <tr>
+              <td>MENGANTI</td>
+              <td>KEBUMEN</td>
+              <td>PANTAI</td>
+            </tr>
+            <td>Borobudur</td>
+              <td>Magelang</td>
+              <td>Candi</td>
+              <tr>
+          </table>
+          <form style="width: 50%; margin: 5% "  >
+
+          <label style="display: block; margin-bottom: 5px;" for="TEMPAT-WISATA">TEMPAT WISATA:</label>
+            <select id="TEMPAT-WISATA " name="TEMPAT WISATA "> <br?>
+                <option value="PANTAI MENGANTI">PANTAI MENGANTI</option>
+                <option value="PANTAI PANDAWA">PANTAI PANDAWA</option>
+                <option value="CANDI BOROBUDUR">CANDI BOROBUDUR</option>
+            </select><br><br>
+    
+            <label style="display: block; margin-bottom: 5px;"for="Kota">KOTA /daerah :</label>
+            <select id="Kota" name="Kota "> <br?>
+                <option value="KEBUMEN">kebumen</option>
+                <option value="BALI">Bali</option>
+                <option value="MAGELANG">Magelang</option>
+            </select><br><br>
+
+            <label style="display: block; margin-bottom: 5px;"for="Ticket">Ticket :</label>
+            <select id="Ticket" name="Ticket"> <br?>
+                <option value="PANTAI MENGANTI RP 20.0000">PANTAI MENGANTI RP 20.0000</option>
+                <option value="PANTAI PADAWA RP 15.000">PANTAI PADAWA RP 15.000</option>
+                <option value="Candi Borobudur RP 50.000">Candi Borobudur RP 50.000</option>
+            </select><br>   
+    
+            <label style="display: block; margin-bottom: 0px;"for="pesan/kesan  ">Pesan/kesan:</label><br>
+            <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea><br>
+            
+        <form action="">
+            <input type="radio" id="html" name="pantai" value="Pantai MENGANTI">
+            <label for="html">Pantai MENGANTI</label><br>
+            <input type="radio" id="html" name="pantai" value="Pantai PANDAWA">
+            <label for="html">Pantai PANDAWA</label><br>
+            <input type="radio" id="html" name="CANDI" value="CANDI BOROBUDUR">
+            <label for="html">CANDI Borobudur</label><br>
+            <input style="padding: 5px; " type="submit"value="submit">
+        </form>
+        
+        </body>
+        </html>
+        
