@@ -1,0 +1,277 @@
+root {
+    --primaryTextColor: #232e35;
+    --secondaryTextColor: #656d72;
+
+    --borderColor: #f1f1f1;
+    --LineColor: #d9d9d9;
+
+    --PrimaryBackgroundColor: #fff;
+    --secondaryBackgroundColor: #fbfbfb;
+    --thirdBackgroundColor: #f5f3fe;
+
+    --primaryIconColor: #3EB489;
+    --primaryIconColorHover: #5d51e8;
+
+    --sectionPadding: 6rem 0;
+
+    --itemBorderRadius: 0.7rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif ;
+}
+
+h1,h2,h3,h4,h5,h6,  strong {
+    color: var(--primaryTextColor);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li {
+    color: var(--secondaryTextColor);
+}
+
+a {
+    text-decoration: none;
+}
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-widht: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+.section-title {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--secondaryTextColor);
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: var(--LineColor);
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
+.grid-3 {
+    display:grid;
+    list-style-type:none;
+    margin:0;padding:0;
+    grid-template-columns: repeat(3, auto);
+}
+.grid-1 {
+    display:grid;
+    list-style-type:none;
+    margin:20;padding:30;
+    grid-template-columns: repeat(1, auto);
+}
+
+.grid-3 {
+    display:grid;
+    list-style-type:none;
+    margin:0;padding:0;
+    grid-template-columns: repeat(3, auto);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a {
+    color: #ff0000;
+}
+
+.logo a span {
+    color:  #2f3966;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--primaryTextColor);
+}
+
+
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+
+.hero-name span {
+    color: var(--primaryIconColor);
+}
+
+.hero-right img {
+    width: 70%;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+#karakters {
+    background-color: var(--secondaryBackgroundColor);
+    padding: var(--sectionPadding);
+}
+
+.karakters .pre-title {
+    margin: 0 auto;
+}
+
+.karakters-title {
+    text-align: center;
+}
+
+.karakter {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--PrimaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
+.karakter h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.karakter-icon {
+    background: var(--thirdBackgroundColor);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.karakter-icon svg {
+    fill: var(--primaryIconColor);
+}
+
+#pendidikan {
+    background-color: var(--econdaryBackgroundColor);
+    padding: var(--sectionPadding);
+}
+
+.pendidikan.pre-title { 
+    margin: 0 auto;
+}
+
+.pendidikan-title {
+    text-align: center;
+}
+
+.pendidikan {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--PrimaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
+.pendidikan h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.pendidikan-icon {
+    background: var(--thirdBackgroundColor);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.pendidikan-icon svg {
+    fill: var(--primaryIconColor);
+}
+
+#works {
+    background-color: var(--secondaryBackgroundColor);
+    padding: var(--sectionPadding);
+}
+
+.works .pre-title {
+    margin: 0 auto;
+}
+
+.works-title {
+    text-align: center;
+}
+.work {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--PrimaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
+.work h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.work-icon {
+    background: var(--thirdBackgroundColor);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.work-icon svg {
+    fill: var(--primaryIconColor);
+}
